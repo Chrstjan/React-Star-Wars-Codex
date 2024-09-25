@@ -6,7 +6,13 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <h1>React Boilerplate</h1>
+      <Router>
+        <Routes>
+          <Route>
+            <Route />
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }
