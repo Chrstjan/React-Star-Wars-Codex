@@ -8,7 +8,7 @@ export const MainLayout = () => {
         <>
             <Header />
             <Navbar />
-            <Outlet />
+            {/* <Outlet /> */}
             <Footer />
         </>
     )

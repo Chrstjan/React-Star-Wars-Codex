@@ -1,5 +1,7 @@
 export const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+      <h1>The Space Wars Codex</h1>
+    </header>
   )
 }
