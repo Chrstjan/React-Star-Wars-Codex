@@ -3,6 +3,7 @@ import { request } from "graphql-request"
 import { allFilms } from "../queries/allFilms"
 import { useEffect } from "react";
 import { allCharacters } from "../queries/allCharacters";
+import { Link } from "react-router-dom";
 
 
 export const CharactersPage = () => {
@@ -24,6 +25,14 @@ export const CharactersPage = () => {
   }
 
   return (
-    <div></div>
+    <div>
+      {data?.allPeople?.people.map((item) => {
+        return (
+          <Link key={item.id} to={`/character/${item.id}`}>
+            <h4>{item.name}</h4>
+          </Link>
+        )
+      })}
+    </div>
   )
 }
