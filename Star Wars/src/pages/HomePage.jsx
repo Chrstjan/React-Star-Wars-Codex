@@ -10,7 +10,9 @@ export const HomePage = () => {
 
   return (
     <>
-    <div>{<Card action={OpenModal}></Card>}</div>
+    <main>
+        <div>{<Card action={OpenModal}></Card>}</div> 
+    </main>
     <Modal />
     </>
   )

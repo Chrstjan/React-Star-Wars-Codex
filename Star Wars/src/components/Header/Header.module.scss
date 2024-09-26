@@ -6,6 +6,11 @@
 }
 
 .Header {
+    background: url('../../assets/images/hero2.png');
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+
     h1 {
         color: $Black;
         -webkit-text-stroke-width: 1px;
@@ -15,5 +20,6 @@
         letter-spacing: 1rem;
         text-align: center;
         margin: 0;
+        padding: 1rem 0;
     }
 }

@@ -6,7 +6,7 @@ import { allFilms } from "../../queries/allFilms";
 
 export function Card({ action }) {
   const moviePosters = [
-    "./src/assets/images/star-wars-ep4.png",
+    "./src/assets/images/star-wars-ep-4.png",
     "./src/assets/images/star-wars-ep-5.png",
     "./src/assets/images/star-wars-ep-6.png",
     "./src/assets/images/star-wars-ep-1.png",
@@ -28,9 +28,9 @@ export function Card({ action }) {
       <section className={style.filmCard}>
         {data?.allFilms?.films?.map((item, index) => {
           return (
-            <figure onClick={() => action()} key={item.title}>
+            <figure className={style.singleCard} onClick={() => action()} key={item.title}>
+              <img src={moviePosters[index]} />
               <h4>{item.title}</h4>
-              <img src={moviePosters[index]} style={{ width: "50%" }} />
             </figure>
           );
         })}

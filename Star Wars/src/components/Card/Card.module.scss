@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.filmCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    // background: red;
+
+    .singleCard {
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border: 1px solid $White;
+        background: $White;
+        color: $Black;
+        text-align: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            
+            &:hover {
+                transform: scale(1.1);
+                transition: .5s ease all;
+            }
+        }        
+
+        h4 {
+            // margin: 0;
+        }
+    }
+}
