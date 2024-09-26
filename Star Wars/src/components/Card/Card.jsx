@@ -29,7 +29,9 @@ export function Card({ action }) {
         {data?.allFilms?.films?.map((item, index) => {
           return (
             <figure className={style.singleCard} onClick={() => action()} key={item.title}>
-              <img src={moviePosters[index]} />
+              <div className={style.imgContainer}>
+                <img src={moviePosters[index]} />
+              </div>
               <h4>{item.title}</h4>
             </figure>
           );
