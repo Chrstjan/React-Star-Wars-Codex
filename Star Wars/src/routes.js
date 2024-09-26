@@ -4,10 +4,6 @@ export const navLinks = [
         title: "Home",
     },
     {
-        link: "/search",
-        title: "Search",
-    },
-    {
         link: "/characters",
         title: "Characters",
     }

@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path={"/"} element={<MainLayout />}>
             <Route index element={<HomePage />}/>
-            <Route path={"/search"} element={<SearchPage />}/>
             <Route path={"/characters"} element={<CharactersPage />}/>
             <Route path={"/character/:characterId"} element={<CharacterPage />} />
           </Route>

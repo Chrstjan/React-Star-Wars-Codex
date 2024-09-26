@@ -47,7 +47,7 @@ export const CharactersPage = () => {
       .map((item, index) => {
         return (
           //Sends the id of the character in the character page url, So that we can fetch on that characters id on the character page
-          <Link key={item.id} to={`/character/${item.id}`}>
+          <Link style={{color: "##FFE81F;"}} key={item.id} to={`/character/${item.id}`}>
             <h4>{item.name}</h4>
             <img src={images?.items[index]?.fields?.image?.fields?.file?.url} alt={item.name} />
           </Link>
