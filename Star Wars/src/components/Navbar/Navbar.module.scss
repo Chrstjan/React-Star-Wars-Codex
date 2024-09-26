@@ -25,3 +25,18 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .Nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin: 1rem;
+
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+}

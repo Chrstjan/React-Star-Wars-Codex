@@ -23,7 +23,21 @@
     background: #000; //Temp color
     width: 30vw;
 
+    button {
+        color: black;
+        background: white;
+        border: none;
+        padding: 0.2rem 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     p {
         width: 340px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modalStyle {
+        width: 90%;
     }
 }

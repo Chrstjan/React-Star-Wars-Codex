@@ -4,9 +4,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    cursor: pointer;
     // background: red;
-
+    
     .singleCard {
         border-bottom-right-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
@@ -15,6 +14,7 @@
         color: $Black;
         text-align: center;
         overflow: hidden;
+        cursor: pointer;
 
         .imgContainer {
             overflow: hidden;
@@ -35,5 +35,11 @@
         h4 {
             margin: 0;
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .filmCard {
+        grid-template-columns: 1fr;
     }
 }

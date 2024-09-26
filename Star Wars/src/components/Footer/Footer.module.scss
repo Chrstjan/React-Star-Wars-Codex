@@ -2,8 +2,21 @@
 
 .Footer {
     background: $Black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
     p {
         margin: 0.5rem;
+
+        a {
+            color: $White;
+        }
     }
+}
+
+@media screen and (max-width: 992px) {
+    .Footer {
+        grid-template-columns: 1fr;
+    }
+
 }
