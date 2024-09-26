@@ -1,4 +1,5 @@
 import { Card } from "../components/Card/Card"
+import { Modal } from "../components/Modal/Modal"
 import { useState } from "react"
 
 export const HomePage = () => {
@@ -9,7 +10,8 @@ export const HomePage = () => {
 
   return (
     <>
-    <div>{<Card action={OpenModal}></Card>}</div> 
+    <div>{<Card action={OpenModal}></Card>}</div>
+    <Modal />
     </>
   )
 }

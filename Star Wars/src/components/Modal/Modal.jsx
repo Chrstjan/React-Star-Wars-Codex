@@ -2,6 +2,7 @@ import { useState } from "react"
 
 export function Modal ({setIsModalOpen, isModalOpen, data}) {
     
+    console.log("Open Modal");
 
     if (isModalOpen == true) {
 
