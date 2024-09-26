@@ -35,6 +35,7 @@ export const CharacterPage = () => {
         <div>
             <h2>{data?.person?.name}</h2>
             <p>Birth Year: {data?.person?.birthYear}</p>
+            {data?.person?.species?.name ? <p>Species: {data?.person?.species?.name}</p> : null}
             <p style={{textTransform: "capitalize"}}>Gender: {data?.person?.gender}</p>
             <p>Homeworld: {data?.person?.homeworld.name}</p>
         </div>
