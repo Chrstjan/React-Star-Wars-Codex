@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
 import { navLinks } from "../../routes"
+import ns from './Navbar.module.scss'
 
 export const Navbar = () => {
   return (
     <nav>
-        <ul>
+        <ul className={ns.Nav}>
             {navLinks.map((link) => {
                 return (
                     <li key={link.title}>

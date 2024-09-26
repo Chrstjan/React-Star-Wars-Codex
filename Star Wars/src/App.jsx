@@ -6,6 +6,7 @@ import { MainLayout } from "./layouts/MainLayout";
 import { HomePage } from "./pages/HomePage";
 import { SearchPage } from "./pages/SearchPage";
 import { CharactersPage } from "./pages/CharactersPage";
+import { CharacterPage } from "./pages/CharacterPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<HomePage />}/>
             <Route path={"/search"} element={<SearchPage />}/>
             <Route path={"/characters"} element={<CharactersPage />}/>
+            <Route path={"/character/:characterId"} element={<CharacterPage />} />
           </Route>
         </Routes>
       </Router>

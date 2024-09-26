@@ -9,7 +9,6 @@ export const HomePage = () => {
   return (
     <>
     <div>{<Card action={OpenModal}></Card>}</div> 
-   
     </>
   )
 }
