@@ -19,21 +19,27 @@ export const HomePage = () => {
     console.log("Film Data:", data);
   }, [data])
 
+  if (isLoading) {
+    return (<h2>Getting data from a galaxy far far away</h2>)
+  }
+
+  if (error) {
+    return (<h2>This is not the data you're looking for</h2>)
+  }
+
 
   //Temp testing code!!
   return (
     <div>
-      {data?.allFilms?.films?.map((item) => {
+    {data?.allFilms?.films?.map((item, index) => {
       return (
-        <figure>
-          <h4 key={item.title}>{item.title}</h4>
+        <figure key={item.title}>
+          <img src={moviePosters[index]} style={{width: "50%"}} alt={`${item.title} Poster`} />
+          <h4>{item.title}</h4>
+          <p>{item.openingCrawl}</p>
         </figure>
-      )
+      );
     })}
-    {moviePosters.map((item) => {
-      return (
-        <img src={item} />
-      )
-    })}</div>
+  </div>
   )
 }
