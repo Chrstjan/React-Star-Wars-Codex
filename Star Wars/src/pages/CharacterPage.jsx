@@ -18,6 +18,14 @@ export const CharacterPage = () => {
         console.log(data);
     }, [data])
 
+    if (isLoading) {
+        return (<h2>Fetching data from a galaxy far far away</h2>)
+      }
+    
+    if (error) {
+        return (<h2>This is not the data you're looking for</h2>)
+    }
+
 
   return (
     <section>
