@@ -11,9 +11,9 @@ export const HomePage = () => {
   return (
     <>
     <main>
-        <div>{<Card action={OpenModal}></Card>}</div> 
+        <div>{<Card action={OpenModal}></Card>}</div>
+        {isModalOpen ? <Modal setIsModalOpen={setIsModalOpen}/> : null} 
     </main>
-    <Modal />
     </>
   )
 }
