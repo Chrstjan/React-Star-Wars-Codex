@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('../../assets/fonts/Starjedi.ttf') format('truetype');
+}
+
+.Header {
+    h1 {
+        color: $Black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $Banana;
+        font-family: 'Star Jedi', sans-serif;
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+}

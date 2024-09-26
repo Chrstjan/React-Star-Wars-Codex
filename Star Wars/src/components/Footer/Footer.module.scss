@@ -1,0 +1,9 @@
+@use '../../styles/variables' as *;
+
+.Footer {
+    background: $Black;
+
+    p {
+        margin: 0.5rem;
+    }
+}

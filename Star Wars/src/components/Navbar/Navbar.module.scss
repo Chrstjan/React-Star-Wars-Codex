@@ -1,0 +1,10 @@
+@use '../../styles/variables' as *;
+
+.Nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: $Black;
+}
