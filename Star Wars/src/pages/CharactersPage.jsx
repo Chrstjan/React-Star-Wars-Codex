@@ -39,7 +39,7 @@ export const CharactersPage = () => {
   }
 
   return (
-    <div>
+    <div style={{display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", textAlign: "center"}}>
       {data?.allPeople?.people
       .slice() // create a copy of the array from the star wars api to modify instead of the original array
       .sort((a, b) => a.name.localeCompare(b.name)) // sorts the names alphabetically to fit with the images from contentful

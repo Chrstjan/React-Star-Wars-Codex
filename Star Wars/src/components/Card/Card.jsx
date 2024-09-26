@@ -4,7 +4,7 @@ import { request } from "graphql-request";
 import { useEffect } from "react";
 import { allFilms } from "../../queries/allFilms";
 
-export function Card({ action }) {
+export function Card({ action, setClickedMovie }) {
   const moviePosters = [
     "./src/assets/images/star-wars-ep-4.png",
     "./src/assets/images/star-wars-ep-5.png",
@@ -28,7 +28,7 @@ export function Card({ action }) {
       <section className={style.filmCard}>
         {data?.allFilms?.films?.map((item, index) => {
           return (
-            <figure className={style.singleCard} onClick={() => action()} key={item.title}>
+            <figure className={style.singleCard} onClick={() => action(item)} key={item.title}>
               <img src={moviePosters[index]} />
               <h4>{item.title}</h4>
             </figure>
