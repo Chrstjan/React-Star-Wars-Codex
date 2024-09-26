@@ -4,7 +4,8 @@ import { useState } from "react"
 export const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  function OpenModal {setIsModalOpen(true)}
+  function OpenModal() {setIsModalOpen(true)}
+  
 
   return (
     <>
