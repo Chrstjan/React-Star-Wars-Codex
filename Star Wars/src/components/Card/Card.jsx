@@ -28,7 +28,7 @@ export function Card({ action, setClickedMovie }) {
       <section className={style.filmCard}>
         {data?.allFilms?.films?.map((item, index) => {
           return (
-            <figure className={style.singleCard} onClick={() => action(item)} key={item.title}>
+            <figure className={style.singleCard} onClick={() => action(item, moviePosters[index])} key={item.title}>
               <div className={style.imgContainer}>
                 <img src={moviePosters[index]} />
               </div>
